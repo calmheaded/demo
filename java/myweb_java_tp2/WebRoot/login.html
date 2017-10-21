@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login.html</title>
+  	<meta charset="utf-8">
+  	<script src="js/jquery-1.8.3.min.js"></script>
+  	<script src="js/login.js"></script>
+  	<style>
+	   canvas{
+	   	background:#ccc;
+	   	}
+	   </style>
+  	
+  </head>
+  
+  <body>
+  	<canvas id="canvas" width=500 height=500></canvas>
+  	<button type="button" id="msgcon" onclick="msgcontent1();">留言</button>
+    <form action="#" method="post">
+    	<input type="text" id="loginname" name="loginname" placeholder="Username" autocomplete="off"/>
+    	<input type="password" id="loginpsd" name="loginpsd" placeholder="Password" />
+    	<button type="button" id="login" onclick="userlogin();">登录</button>
+    </form>
+    
+    
+    <form action="#" method="post">
+    	<input type="text" id="regname" name=regname placeholder="regname" autocomplete="off" onblur="validatephone();"/>
+    	<input type="password" id="regpsd" name="regpsd" placeholder="regpsd">
+    	<input type="password" id="newregpsd" name="newregpsd" placeholder="newregpsd" />
+    	<button type="button" id="reg" onclick="userreg();">注册</button>
+    </form>
+    
+  </body>
+</html>
